@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSupport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="support-card">
+
+        <div class="hero">
+            <div class="logo">⚡</div>
+
+            <div>
+                <span class="badge">TECH SUPPORT</span>
+                <h1>Jak vám můžeme<br><span>pomoci?</span></h1>
+                <p>
+                    Vyplňte formulář a náš tým technické podpory
+                    se vám co nejdříve ozve.
+                </p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Podpora online
+            </div>
+        </div>
+
+
+        <div class="form-area">
+
+            <form>
+
+                <div class="section-title">
+                    <span>01</span>
+                    <div>
+                        <h2>Základní informace</h2>
+                        <p>Řekněte nám, kdo jste.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+
+                    <div class="input-box">
+                        <label for="name">Jméno</label>
+                        <div class="input-wrapper">
+                            <span>👤</span>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Jan Novák"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <div class="input-wrapper">
+                            <span>✉</span>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="jan@email.cz"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="section-title second">
+                    <span>02</span>
+                    <div>
+                        <h2>Popis problému</h2>
+                        <p>Pomozte nám problém co nejlépe pochopit.</p>
+                    </div>
+                </div>
+
+
+                <div class="input-box">
+                    <label for="subject">Předmět</label>
+                    <div class="input-wrapper">
+                        <span>▣</span>
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Např. Nemohu se přihlásit"
+                        >
+                    </div>
+                </div>
+
+
+                <div class="grid">
+
+                    <div class="input-box">
+                        <label for="category">Kategorie</label>
+                        <div class="input-wrapper select">
+                            <span>◈</span>
+
+                            <select id="category">
+                                <option value="">Vyberte kategorii</option>
+                                <option>Hardware</option>
+                                <option>Software</option>
+                                <option>Internet / Síť</option>
+                                <option>Účet</option>
+                                <option>Jiné</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label>Priorita</label>
+
+                        <div class="priority">
+
+                            <label class="priority-option">
+                                <input type="radio" name="priority">
+                                <span class="low">Nízká</span>
+                            </label>
+
+                            <label class="priority-option">
+                                <input
+                                    type="radio"
+                                    name="priority"
+                                    checked
+                                >
+                                <span class="medium">Střední</span>
+                            </label>
+
+                            <label class="priority-option">
+                                <input type="radio" name="priority">
+                                <span class="high">Vysoká</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="input-box">
+                    <label for="message">Popis problému</label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Popište nám, co se stalo..."
+                        required
+                    ></textarea>
+
+                    <div class="textarea-info">
+                        <span>Buďte co nejkonkrétnější</span>
+                        <span>0 / 1000</span>
+                    </div>
+                </div>
+
+
+                <div class="upload">
+
+                    <div class="upload-icon">↑</div>
+
+                    <div>
+                        <strong>Přiložit soubor</strong>
+                        <p>
+                            Screenshot nebo jiný soubor
+                            <br>
+                            <small>PNG, JPG, PDF • max. 10 MB</small>
+                        </p>
+                    </div>
+
+                    <input type="file">
+
+                    <button type="button" class="browse">
+                        Vybrat
+                    </button>
+
+                </div>
+
+
+                <div class="bottom">
+
+                    <label class="terms">
+                        <input type="checkbox" required>
+                        <span>
+                            Souhlasím se zpracováním údajů
+                        </span>
+                    </label>
+
+                    <button class="submit" type="submit">
+                        Odeslat požadavek
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
